@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'BeyondWonderland';
+    font-style: normal;
+    font-weight: normal;
+    src: local('BeyondWonderland'), url('./BeyondWonderland.woff') format('woff');
+}
+
+h1 {
+    font-family: 'BeyondWonderland';
+    font-weight: 400;
+    color: whitesmoke;
+}
