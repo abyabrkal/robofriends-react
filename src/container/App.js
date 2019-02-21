@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import CardList from './CardList';
-import SearchBox from './SearchBox';
-import Scroll from './Scroll';
+import CardList from '../components/CardList';
+import SearchBox from '../components/SearchBox';
+import Scroll from '../components/Scroll';
 import './App.css';
 
 class App extends Component {
@@ -32,7 +32,7 @@ class App extends Component {
         })
 
         // This check whther robots is having data and if not, it displays a 'Loading..' message
-        if(this.state.robots.length === 0){
+        if(!robots.length){
             return <h1 className="tc f-headline">Loading...</h1>
         } else {
             return (
