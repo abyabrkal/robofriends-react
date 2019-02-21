@@ -30,14 +30,20 @@ class App extends Component {
             return robot.name.toLowerCase().includes(searchfield.toLowerCase());
         })
 
-        return (
-            <div className="tc">
-                <h1 className="f1">RoboFriends</h1>
-                <SearchBox searchChange={this.onSearchChange}/>
-                <CardList robots={filteredRobots} />
-            </div>
-            
-        );
+        // This check whther robots is having data and if not, it displays a 'Loading..' message
+        if(this.state.robots.length === 0){
+            return <h1 className="tc f-headline">Loading...</h1>
+        } else {
+            return (
+                <div className="tc">
+                    <h1 className="f1">RoboFriends</h1>
+                    <SearchBox searchChange={this.onSearchChange}/>
+                    <CardList robots={filteredRobots} />
+                </div>
+                
+            );
+        }
+
     }
     
 };
