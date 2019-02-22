@@ -19,23 +19,3 @@ const Card = ({ id, name, email }) => {
 }
 
 export default Card;
-
-// transition: .4s background linear;
-
-// <div className="tc bg-light-blue dib pa3 ma2 grow bw2 shadow-5 br1">
-//             <img alt='profile' src={`https://robohash.org/${id}?200x200`} />
-//             <div>
-//                 <h2>{name}</h2>
-//                 <p>{email}</p>
-//             </div>
-//         </div>
-
-
-
-  /* <article className="mw8 w8 h7 center bg-white dib ba ma5 pa1 pa4-ns grow shadow-5 br1 mycard">
-            <div className="tc">
-                <img src={`https://robohash.org/${id}?200x200`} className="br-100 h4 w4 dib ba b--black-05 pa2" alt="profile pic" />
-                <h2 className="f3 mb0">{name.split(' ')[1]}</h2>
-                <p className="f5 fw4 gray mt0">{email}</p>
-            </div>
-        </article> */
