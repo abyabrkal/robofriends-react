@@ -3,7 +3,7 @@ import Card from './Card';
 
 const CardList = ({ robots }) => {
     return (
-        <div>
+        <ul class="list pl0 mt0 measure center">
             {
                 robots.map((user) => {
                     return (<Card   key={user.id} 
@@ -13,7 +13,7 @@ const CardList = ({ robots }) => {
                             />);
                 })
             }
-        </div>
+        </ul>
     );
 }
 
