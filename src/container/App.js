@@ -3,6 +3,7 @@ import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import './App.css';
+import Footer from '../components/Footer';
 
 class App extends Component {
     constructor() {
@@ -42,6 +43,7 @@ class App extends Component {
                     <Scroll>
                         <CardList robots={filteredRobots} />
                     </Scroll>
+                    <Footer />
                 </div>
                 
             );

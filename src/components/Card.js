@@ -5,7 +5,7 @@ import './Card.css'
 const Card = ({ id, name, email }) => {
     return (
         <li
-            className="flex items-center lh-copy pa3 ph0-l mycard ma3 grow">
+            className="lh-copy pa3 ph0-l mycard ma3 grow">
             <img className="w2 h2 w3-ns h3-ns br-100" src={`https://robohash.org/${id}?200x200`} alt="profile pic" />
             <div className="pl3 flex-auto">
                 <span className="f6 db black-70">{name}</span>

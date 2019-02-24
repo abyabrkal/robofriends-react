@@ -3,7 +3,7 @@ import Card from './Card';
 
 const CardList = ({ robots }) => {
     return (
-        <ul class="list pl0 mt0 measure center">
+        <ul class="list pl0 mt0 measure center flex flex-wrap items-start justify-start">
             {
                 robots.map((user) => {
                     return (<Card   key={user.id} 
