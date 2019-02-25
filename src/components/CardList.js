@@ -4,7 +4,7 @@ import Card from './Card';
 /* list pl0 mt0 measure */
 const CardList = ({ robots }) => {
     return (
-        <ul class="list flex flex-column flex-wrap items-start justify-center"> 
+        <div class="flex flex-wrap">
             {
                 robots.map((user) => {
                     return (<Card   key={user.id} 
@@ -14,8 +14,10 @@ const CardList = ({ robots }) => {
                             />);
                 })
             }
-        </ul>
+        </div>
     );
 }
 
 export default CardList;
+
+        
