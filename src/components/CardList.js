@@ -1,9 +1,10 @@
 import React from 'react';
 import Card from './Card';
 
+/* list pl0 mt0 measure */
 const CardList = ({ robots }) => {
     return (
-        <div>
+        <div class="flex flex-wrap">
             {
                 robots.map((user) => {
                     return (<Card   key={user.id} 
@@ -18,3 +19,5 @@ const CardList = ({ robots }) => {
 }
 
 export default CardList;
+
+        
